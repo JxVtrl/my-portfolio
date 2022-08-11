@@ -1,13 +1,12 @@
 import React from 'react';
+import { Image } from '@chakra-ui/react'
 
 interface BackgroundProps {
-    children: React.ReactNode;
+    src: string;
 }
 
-export const Background: React.FC<BackgroundProps> = ({ children }) => {
+export const Background: React.FC<BackgroundProps> = ({ src }) => {
     return (
-        <div>
-            {children}
-        </div>
+        <Image w='100%' zIndex={-1} pos='absolute' src={src} />
     );
 }
