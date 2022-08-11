@@ -1,1 +1,1 @@
-export  { FastIntro } from './FastIntro'
+export  { Background } from './Background'
