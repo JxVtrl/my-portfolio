@@ -15,10 +15,13 @@ export const Connect: React.FC = () => {
                 LET'S CONNECT
             </Text>
             <Flex gap='15px' mt='5px'>
-                <Link href='https://github.com/JxVtrl' isExternal>
+                <Link title='CV | Professional Resume'>
+                    <i className="fa-solid fa-book fa-xl" />
+                </Link>
+                <Link title='Github' href='https://github.com/JxVtrl' isExternal>
                     <i className="fa-brands fa-github fa-xl" />
                 </Link>
-                <Link href='https://www.linkedin.com/in/joao-vinicius-vitral/' isExternal>
+                <Link title='LinkedIn' href='https://www.linkedin.com/in/joao-vinicius-vitral/' isExternal>
                     <i className="fa-brands fa-linkedin-in fa-xl" />
                 </Link>
             </Flex>

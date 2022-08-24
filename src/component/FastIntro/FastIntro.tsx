@@ -7,10 +7,11 @@ export const FastIntro: React.FC = () => {
         <Flex
             margin='220px auto 0'
             w='80%'
-            h='100px'
             flexDir='column'
         >
-            <Heading fontFamily='Poppins'>I'm João,<br />Glad to see you!</Heading>
+            <Heading fontFamily='Poppins'>
+                I'm João,<br />Glad to see you!
+            </Heading>
             <Text
                 fontFamily='Poppins'
                 fontSize={['12px', '20px']}

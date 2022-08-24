@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "name": "Project 1",
+            "description": "",
+            "data": "",
+            "src": "",
+            "tags": []
+        },
+        {
+            "id": 1,
+            "name": "Project 2",
+            "description": "",
+            "data": "",
+            "src": "",
+            "tags": []
+        },
+        {
+            "id": 2,
+            "name": "Project 3",
+            "description": "",
+            "data": "",
+            "src": "",
+            "tags": []
+        }
+    ],
+    "skills": [
+        ""
+    ]
+}

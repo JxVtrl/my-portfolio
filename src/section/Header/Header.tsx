@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
         >
             <Heading
                 as='h1'
-                fontSize='18px'
+                fontSize='24px'
                 fontWeight='800'
                 color='#6070ff'
             >
@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
                     flexDirection='row'
                     listStyleType='none'
                     gap='40px'
-                    fontSize='15px'
+                    fontSize='16px'
                     fontWeight='500'
                 >
                     {list.map(item => (
