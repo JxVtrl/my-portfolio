@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as RouterLink } from "react-router-dom";
 import { Flex, ListItem, UnorderedList, Link, Heading } from '@chakra-ui/react';
+import { useDevice } from '../../hooks';
 
 const list = [
     {
@@ -19,6 +20,7 @@ const list = [
 ]
 
 export const Header: React.FC = () => {
+    const { isMobile } = useDevice();
     return (
         <Flex
             justify='space-between'
@@ -37,7 +39,7 @@ export const Header: React.FC = () => {
             <nav>    
                 <UnorderedList
                     display='flex'
-                    flexDirection='row'
+                    flexDirection={isMobile ? 'column' : 'row'}
                     listStyleType='none'
                     gap='40px'
                     fontSize='16px'
@@ -53,10 +55,9 @@ export const Header: React.FC = () => {
                                 bg: '#6070ff',
                                 color: '#fff',
                             }}
+                            cursor='pointer'
                         >
-                            <Link as={RouterLink} to={item.href}>
-                                {item.name}
-                            </Link>
+                            {item.name}
                         </ListItem>
                     ))}
                 </UnorderedList>
